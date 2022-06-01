@@ -1,8 +1,7 @@
-﻿
-using Microsoft.Playwright;
+﻿using Microsoft.Playwright;
 using System.Threading.Tasks;
 
-namespace DotNetSpecFlowPlaywright.PageObjects
+namespace PlaywrightDotNetSpecFlow.PageObjects
 {
     public class CommonPageObjects
     {
@@ -12,13 +11,10 @@ namespace DotNetSpecFlowPlaywright.PageObjects
         {
             _page = page;
         }
-
-
         public async Task GivenINavigateTo(string p0)
         {
             await _page.GotoAsync(p0);
         }
-
 
         public async Task WhenIClickNewsMenu(string p0)
         {

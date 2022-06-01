@@ -2,10 +2,11 @@
 using System;
 using System.Threading.Tasks;
 
-namespace DotNetSpecFlowPlaywright.Helpers
+namespace PlaywrightDotNetSpecFlow.Helpers
 {
     public static class Helpers
     {
+
         public static async Task Screenshot(IPage page)
         {
             var date = DateTime.UtcNow.ToString("yyyy-MM-dd_HH-mm-ss");
